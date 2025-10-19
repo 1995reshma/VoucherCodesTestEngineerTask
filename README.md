@@ -122,11 +122,12 @@ export default class SearchRestaurant {
 ```
 
 ---
-#### **NOTE Create the Utilities and testData folder for organizing the tests and enhancing maintainability **
+#### **Step 6: Create the Utilities and testData folder for organizing the tests and enhancing maintainability **
 
-#### **Step 6: (Optional) Use Custom fixtures**
+#### **Step 7: (Optional) Use Custom fixtures**
 Fixtures are used for set up and tear down before running a test. This helps to prevent duplication of code accross multiple tests and keeps the spec files clean
 
+```javascript
 import { test as base } from '@playwright/test';
 import SearchRestaurant from '../pages/SearchRestaurant';
 import acceptCookiePopUp from '../Utilities/util.js';
@@ -139,7 +140,7 @@ export const test = base.extend({
        await use(searchPage);
   },
 });
-
+```
 
 
 ## 3️⃣ Run Playwright Tests
@@ -164,7 +165,10 @@ After generating the reports and running the open command the Allure report open
 ### Covering Note (Technology Choices)
 I chose playwright + javascript.
 
-Why this stack ? 
+Why this stack ?
+
+I chose Playwright + JavaScript + POM because it aligns with the tech stack mentioned in the job description, provides powerful multi-tab and parallel execution capabilities, integrates well with CI/CD and supports building clean, maintainable automation frameworks suitable for scaling future tests.
+
 
 
 
