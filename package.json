@@ -1,0 +1,25 @@
+{
+  "name": "vouchercodestestengineertask",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "clean": "node clean.js",
+    "test": "npm run clean && npx playwright test",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "test:allure": "npx allure-commandline generate allure-results -o allure-report && npx allure-commandline open allure-report",
+    "test:regression": "npm run clean && npx playwright test --grep \"@regression\"",
+    "test:smoke": "npm run clean && npx playwright test --grep \"@smoke\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.8.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.1"
+  }
+}
