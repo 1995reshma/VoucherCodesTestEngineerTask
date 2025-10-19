@@ -1,7 +1,7 @@
-# VoucherCodesTestEngineerTask
+# Voucher Codes TestEngineer Task
 
 # 🚀 Overview
-This project is an end to end automated testing framework built with playwright, javascript, and Page Object Model (POM).
+This project is an end to end automation testing framework built with playwright, javascript, and Page Object Model (POM).
 
 ## 📌 Tech Stack
 - **Playwright** - End-to-end test framework for modern web apps
