@@ -16,7 +16,41 @@ This project is an end to end automation testing framework built with playwright
 git clone https://github.com/1995reshma/VoucherCodesTestEngineerTask.git
 ```
 
-### 2️⃣ Install playwright with javascript and allure reporting dependencies
+### 2️⃣ Install the dependencies in the package.json
+```sh
+cd .\VoucherCodesTestEngineerTask\
+npm install
+```
+
+## 3️⃣ Run Playwright Tests
+
+### 📌 Run Tests in command Line
+```sh
+npm run test
+```
+
+### 📊 Generating Test Reports (Allure)
+After Running tests use below commands to generate reports:
+```sh
+npm run allure:generate
+npm run allure:open
+```
+
+After generating the reports and running the open command the Allure report opens up and user can view the logs , screenshots and videos under the suite tab 
+
+<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/e4f65247-5190-4355-a1d8-1ac851562ef3" />
+
+
+### Covering Note (Technology Choices)
+
+Why this stack ?
+
+I chose Playwright + JavaScript + POM because it aligns with the tech stack mentioned in the job description, provides powerful multi-tab and parallel execution capabilities, integrates well with CI/CD and supports building clean, maintainable automation frameworks suitable for scaling future tests.
+
+
+### NOTE : The below steps were followed to set up the framework for the first time. (These can be skipped)
+
+### Install playwright with javascript and allure reporting dependencies
 
 #### **Step 1: Install playwright**
 ```sh
@@ -142,32 +176,6 @@ export const test = base.extend({
 });
 ```
 
-
-## 3️⃣ Run Playwright Tests
-
-### 📌 Run Tests in command Line
-```sh
-npm run test
-```
-
-### 📊 Generating Test Reports (Allure)
-After Running tests use below commands to generate reports:
-```sh
-npm run allure:generate
-npm run allure:open
-```
-
-After generating the reports and running the open command the Allure report opens up and user can view the logs , screenshots and videos under the suite tab 
-
-<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/e4f65247-5190-4355-a1d8-1ac851562ef3" />
-
-
-### Covering Note (Technology Choices)
-I chose playwright + javascript.
-
-Why this stack ?
-
-I chose Playwright + JavaScript + POM because it aligns with the tech stack mentioned in the job description, provides powerful multi-tab and parallel execution capabilities, integrates well with CI/CD and supports building clean, maintainable automation frameworks suitable for scaling future tests.
 
 
 
