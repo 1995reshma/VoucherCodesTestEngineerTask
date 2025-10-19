@@ -28,6 +28,14 @@ npm install
 ```sh
 npm run test
 ```
+### 🏷️ Running Tests by Tag
+```sh
+# Run only smoke tests
+npm run test:smoke
+
+# Run only regression tests
+npm run test:regression
+```
 
 ### 📊 Generating Test Reports (Allure)
 After Running tests use below commands to generate reports:
@@ -43,7 +51,7 @@ After generating the reports and running the open command the Allure report open
 
 ### Covering Note (Technology Choices)
 
-Why this stack ?
+## 🧠 Why I Chose Playwright + JavaScript + POM
 
 I chose Playwright + JavaScript + POM because it aligns with the tech stack mentioned in the job description, provides powerful multi-tab and parallel execution capabilities, integrates well with CI/CD and supports building clean, maintainable automation frameworks suitable for scaling future tests.
 
@@ -156,7 +164,7 @@ export default class SearchRestaurant {
 ```
 
 ---
-#### **Step 6: Create the Utilities and testData folder for organizing the tests and enhancing maintainability **
+#### **Step 6: (Optional) Create the Utilities and testData folder for organizing the test data and enhancing reusability **
 
 #### **Step 7: (Optional) Use Custom fixtures**
 Fixtures are used for set up and tear down before running a test. This helps to prevent duplication of code accross multiple tests and keeps the spec files clean
@@ -176,7 +184,9 @@ export const test = base.extend({
 });
 ```
 
-
+## ✅ Summary
+This project demonstrates an automated end-to-end Playwright test for searching restaurant offers on the VoucherCodes website.  
+It showcases best practices including the Page Object Model, Allure reporting, and test tagging — built for scalability, readability, and CI/CD integration.
 
 
 
