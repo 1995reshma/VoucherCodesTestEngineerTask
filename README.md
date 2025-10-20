@@ -10,6 +10,14 @@ This project is an end to end automation testing framework built with playwright
 ---
 
 ## ⚙️ Installation & Setup
+### Pre-requisites
+Before starting, ensure the following are installed on your system:
+
+- **Node.js** (v18 or higher) – [Download Node.js](https://nodejs.org/)
+- **Git** – [Download Git](https://git-scm.com/)
+- **Java JDK 16 or higher** – Required for Allure report generation
+- **Optional:** Modern browser (Chrome, Firefox, Edge) – Playwright can also install its own browsers
+
 
 ### 1️⃣ Clone the Repository
 ```sh
@@ -28,6 +36,12 @@ npm install
 ```sh
 npm run test
 ```
+Run the below command only if the above command does not work
+
+```sh
+npx playwright install
+```
+
 ### 🏷️ Running Tests by Tag
 ```sh
 # Run only smoke tests
